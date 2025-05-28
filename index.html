@@ -153,7 +153,9 @@
              </div>
              <!-- Inner card -->
               <div
-              class="flex p-5 flex-col items-start gap-2 rounded-xl bg-slate-700 w-full">
+              class="flex p-5 flex-col items-start gap-2 rounded-xl bg-slate-700 w-full"
+              :class="selectedPlan === 'pro' ? 'bg-slate-700' : 'bg-slate-800'"
+              >
               <div class="flex items-center gap-1 text-xs font-semibold uppercase text-blue-400">
                 <img src="assets/SealCheck.svg" alt="" x-show="selectedPlan === 'pro'">
               Pro
